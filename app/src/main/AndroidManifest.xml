@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignments">
         <activity
-            android:name=".SplashActivity"
+            android:name=".fragmentpass.loginandregister.MyLogin"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,15 +19,39 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".fragmentpass.splashfrag.SplashFragment"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".fragmentpass.MainFrag"
+            android:exported="true"></activity>
+        <activity
+            android:name=".callsmsemailintent.CallSmsEmail"
+            android:exported="true" />
+        <activity
+            android:name=".objectpassactvity.ObjectOutput"
+            android:exported="false" />
+        <activity
+            android:name=".objectpassactvity.ObjectTake"
+            android:exported="true" />
+        <activity
+            android:name=".sumoftwo.NumeberOuput"
+            android:exported="false" />
+        <activity
+            android:name=".sumoftwo.NumberTaken"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" />
+        <activity
             android:name=".activity_switch.SecondActivity"
             android:exported="false" />
         <activity
             android:name=".activity_switch.FirstActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
