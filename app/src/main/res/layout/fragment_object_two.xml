@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="obj"
+            type="com.example.assignments.objectpassfragment.Employee" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        tools:context=".objectpassfragment.ObjectTwoFragment">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/objTvName"
+            android:text="@{obj.name}"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/objTvName"
+            android:layout_marginTop="15dp"
+            android:textSize="30dp"
+            android:text="@{obj.address}"
+            android:id="@+id/objTvAddress"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/objTvAddress"
+            android:id="@+id/objTvPhone"
+            android:textSize="30dp"
+            android:text="@{String.valueOf(obj.phone)}"
+            android:layout_marginTop="15dp"/>
+
+    </RelativeLayout>
+</layout>
