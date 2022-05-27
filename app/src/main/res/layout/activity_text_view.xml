@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="50dp"
+    tools:context=".textviewhideonradiobutton.TextViewActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Name is Chintu"
+        android:id="@+id/tvHideOne"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHideOne"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/tvHideRadioGroup">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvShow"
+            android:layout_marginRight="50dp"
+            android:text="Show"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvHide"
+            android:text="Hide"/>
+    </RadioGroup>
+
+
+</RelativeLayout>

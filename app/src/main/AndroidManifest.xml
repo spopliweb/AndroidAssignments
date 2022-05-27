@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignments">
         <activity
-            android:name=".loginregfragment.FirstActvity"
-            android:exported="true">
+            android:name=".textsizechange.TextSizeChange"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,16 +19,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".addsubmuldiv.RadioActivity"
+            android:name=".buttonclickbgchange.BackgroundChange"
             android:exported="true">
-
         </activity>
+        <activity
+            android:name=".textviewhideonradiobutton.TextViewActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".loginregfragment.FirstActvity"
+            android:exported="true" />
+        <activity
+            android:name=".addsubmuldiv.RadioActivity"
+            android:exported="true" />
         <activity
             android:name=".number_range.ShowNumbers"
             android:exported="false" />
         <activity
             android:name=".number_range.TakeNumbers"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".reversenumber.ReverseNumber"
             android:exported="true" />
