@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="40dp"
+    tools:context=".addsubmuldiv.RadioActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number One"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:id="@+id/raNumOne"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number Two"
+        android:inputType="number"
+        android:layout_below="@id/raNumOne"
+        android:layout_marginTop="10dp"
+        android:id="@+id/raNumTwo"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/raRadioGroup"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/raNumTwo">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/raPlus"
+            android:layout_marginRight="10dp"
+            android:text="Add"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/raMinus"
+            android:layout_marginRight="10dp"
+            android:text="Substraction"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/raMulti"
+            android:layout_marginRight="10dp"
+            android:text="Multiply"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/raDiv"
+            android:text="Division"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/raTvAnswer"
+        android:layout_below="@id/raRadioGroup"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/red"
+        android:background="#FFEB3B"/>
+
+</RelativeLayout>

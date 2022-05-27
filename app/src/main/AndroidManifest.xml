@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignments">
         <activity
-            android:name=".objectpassfragment.ObjectActivity"
+            android:name=".loginregfragment.FirstActvity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,13 +19,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".fragmentpass.loginandregister.MyLogin"
+            android:name=".addsubmuldiv.RadioActivity"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".fragmentpass.splashfrag.SplashFragment"
+            android:name=".number_range.ShowNumbers"
+            android:exported="false" />
+        <activity
+            android:name=".number_range.TakeNumbers"
             android:exported="true"></activity>
+        <activity
+            android:name=".reversenumber.ReverseNumber"
+            android:exported="true" />
+        <activity
+            android:name=".objectpassfragment.ObjectActivity"
+            android:exported="true" />
+        <activity
+            android:name=".fragmentpass.loginandregister.MyLogin"
+            android:exported="true" />
+        <activity
+            android:name=".fragmentpass.splashfrag.SplashFragment"
+            android:exported="true" />
         <activity
             android:name=".fragmentpass.MainFrag"
             android:exported="true" />
