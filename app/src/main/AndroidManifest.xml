@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignments">
         <activity
-            android:name=".textsizechange.TextSizeChange"
-            android:exported="true" >
+            android:name=".adapter.simpleadapter.EmpData"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,12 +19,38 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".buttonclickbgchange.BackgroundChange"
+            android:name=".adapter.arrayadapter.ListView"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
+            android:name=".adapter.ArrayAdapter"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".seekbar.MySeekbar"
+            android:exported="false" />
+        <activity
+            android:name=".radiobuttoncolor.RadioButton"
+            android:exported="true" />
+        <activity
+            android:name=".textsizechange.TextSizeChange"
+            android:exported="true" />
+        <activity
+            android:name=".buttonclickbgchange.BackgroundChange"
+            android:exported="true" />
+        <activity
             android:name=".textviewhideonradiobutton.TextViewActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".loginregfragment.FirstActvity"
             android:exported="true" />

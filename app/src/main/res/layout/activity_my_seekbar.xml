@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".seekbar.MySeekbar">
+
+    <SeekBar
+        android:id="@+id/seekRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tooltipText="Red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <SeekBar
+        android:id="@+id/seekGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekRed"
+        app:layout_constraintVertical_bias="0.123" />
+
+    <SeekBar
+        android:id="@+id/seekBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekGreen"
+        app:layout_constraintVertical_bias="0.123" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

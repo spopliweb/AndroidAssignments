@@ -3,18 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_array_adapter.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_background_change.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_call_sms_email.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_emp_data.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_first.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_first_actvity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_list_view.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_main_frag.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_my_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_my_seekbar.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_number_taken.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_numeber_ouput.xml" value="0.24010416666666667" />
         <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_object.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_object_output.xml" value="0.24010416666666667" />
         <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_object_take.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_radio.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_radio_button.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_reverse_number.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_second.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/Assigments/app/src/main/res/layout/activity_show_numbers.xml" value="0.24010416666666667" />
@@ -30,6 +35,7 @@
         <entry key="..\:/Projects/Assigments/app/src/main/res/layout/fragment_register.xml" value="0.25416666666666665" />
         <entry key="..\:/Projects/Assigments/app/src/main/res/layout/fragment_registration_one.xml" value="0.24010416666666667" />
         <entry key="..\:/Projects/Assigments/app/src/main/res/layout/fragment_two.xml" value="0.25416666666666665" />
+        <entry key="..\:/Projects/Assigments/app/src/main/res/layout/simple__adapter.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
