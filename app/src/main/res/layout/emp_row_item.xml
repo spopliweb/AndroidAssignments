@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="obj"
+            type="com.example.assignments.recycleview.EmpInfo" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rcTvFirstName"
+                android:text="@{obj.fname}"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rcTvLastname"
+                android:text="@{obj.lname}"
+                android:layout_toRightOf="@id/rcTvFirstName"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rcTvFirstName"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:text="@{String.valueOf(obj.ephone)}"
+                android:id="@+id/rcTvPhone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="@{obj.lemail}"
+                android:layout_below="@id/rcTvPhone"
+                android:layout_marginTop="10dp"
+                android:id="@+id/rcTvEmail"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

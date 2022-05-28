@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignments">
         <activity
-            android:name=".adapter.simpleadapter.EmpData"
+            android:name=".mydialogs.MyDailogs"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,27 +18,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".viewpager.MyViewPage"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".recycleview.MyEmpData"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".adapter.simpleadapter.EmpData"
+            android:exported="true" />
         <activity
             android:name=".adapter.arrayadapter.ListView"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".adapter.ArrayAdapter"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".seekbar.MySeekbar"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".radiobuttoncolor.RadioButton"
             android:exported="true" />
