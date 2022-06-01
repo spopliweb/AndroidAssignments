@@ -13,15 +13,21 @@ import androidx.appcompat.app.AlertDialog
 import com.example.assignments.R
 import com.example.assignments.databinding.ActivityMyDailogsBinding
 import java.util.*
+import kotlin.collections.ArrayList
 
 class MyDailogs : AppCompatActivity() {
     lateinit var binding: ActivityMyDailogsBinding
+    lateinit var items : ArrayList<String>
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMyDailogsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        items = ArrayList()
         val hobbies = arrayOf("Cricket", "Badminton", "Football", "Gym", "Swimming", "Tennis")
+
+        //Simple Alert
         binding.button.setOnClickListener {
             val builder = AlertDialog.Builder(this)
             builder.setTitle("My Title")
@@ -29,6 +35,7 @@ class MyDailogs : AppCompatActivity() {
             builder.setMessage("Your Message comes Here")
             builder.show()
         }
+        //Positive Negative and other button
         binding.button2.setOnClickListener {
             val builder = AlertDialog.Builder(this)
             builder.setTitle("My Title")
@@ -44,6 +51,7 @@ class MyDailogs : AppCompatActivity() {
             builder.show()
         }
 
+        //Single Click
         binding.button3.setOnClickListener {
             val builder = AlertDialog.Builder(this)
             builder.setSingleChoiceItems(hobbies, 0, DialogInterface.OnClickListener { dialogInterface, i ->
@@ -52,6 +60,7 @@ class MyDailogs : AppCompatActivity() {
             builder.show()
         }
 
+        //Date Show
         binding.butDate.setOnClickListener {
             val calender = Calendar.getInstance()
             val year  = calender.get(Calendar.YEAR)
@@ -66,5 +75,28 @@ class MyDailogs : AppCompatActivity() {
             },year,month,day)
             datePicker.show()
         }
+
+        //MultiChoice
+        binding.btnMulti.setOnClickListener {
+            items.clear()
+            items.add(hobbies[0])
+            items.add(hobbies[2])
+            val builder = AlertDialog.Builder(this)
+            builder.setMultiChoiceItems(hobbies, booleanArrayOf(true, false, true, false, false, false), DialogInterface.OnMultiChoiceClickListener { dialogInterface, i, b ->
+                if (b){
+                    items.add(hobbies[i])
+                }else{
+                    items.remove(hobbies[i])
+                }
+            })
+            builder.setPositiveButton("Show", DialogInterface.OnClickListener { dialogInterface, i ->
+                binding.textView2.text = items.toString()
+            })
+            builder.show()
+        }
+
+
+
+
     }
 }

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignments">
         <activity
-            android:name=".mydialogs.MyDailogs"
+            android:name=".menus.popupmenu.PopupMenu"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,13 +19,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".viewpager.MyViewPage"
+            android:name=".menus.MyMenuTwo"
             android:exported="true">
         </activity>
         <activity
+            android:name=".menus.MyMenu"
+            android:exported="true"></activity>
+        <activity
+            android:name=".mydialogs.DateDifference"
+            android:exported="true" />
+        <activity
+            android:name=".toolbarwithsearch.MyToolbar"
+            android:exported="false" />
+        <activity
+            android:name=".mydialogs.MyDailogs"
+            android:exported="true" />
+        <activity
+            android:name=".viewpager.MyViewPage"
+            android:exported="true" />
+        <activity
             android:name=".recycleview.MyEmpData"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".adapter.simpleadapter.EmpData"
             android:exported="true" />
