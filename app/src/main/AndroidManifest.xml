@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignments">
         <activity
-            android:name=".storage.internal.SharedPrefrence"
+            android:name=".noteapp.NoteApp"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,8 +19,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".storage.internal.SharedPrefrence"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".storage.ReadWriteFile"
             android:exported="true">
+
         </activity>
         <activity
             android:name=".menus.popupmenu.PopupMenu"
